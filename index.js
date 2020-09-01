@@ -37,4 +37,20 @@ app.get("/projects/:project", (req, res) => {
     }
 });
 
+app.get("/projects/:project/:subpage", (req, res) => {
+    const subpage = req.params.subPage;
+    const selectedProject = projects.find((item) => item.directory == project);
+    const selectedSubPage = subpage.find((item) => item.directory == subpage);
+
+    if (!selectedProject && !selectedSubPage) {
+        return res.sendStatus(404);
+    } else {
+        res.render("descriptionPage", {
+            title: "Projects",
+            projects,
+            selectedSubPage,
+        });
+    }
+});
+
 app.listen(process.env.PORT || 8080, () => console.log("server listening!"));
