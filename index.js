@@ -37,18 +37,17 @@ app.get("/projects/:project", (req, res) => {
     }
 });
 
-app.get("/projects/:project/:subpage", (req, res) => {
-    const subpage = req.params.subPage;
+app.get("/projects/:project/src", (req, res) => {
+    const project = req.params.project;
     const selectedProject = projects.find((item) => item.directory == project);
-    const selectedSubPage = subpage.find((item) => item.directory == subpage);
 
-    if (!selectedProject && !selectedSubPage) {
+    if (!selectedProject) {
         return res.sendStatus(404);
     } else {
         res.render("descriptionPage", {
             title: "Projects",
             projects,
-            selectedSubPage,
+            selectedProject,
         });
     }
 });
