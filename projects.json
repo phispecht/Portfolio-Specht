@@ -23,5 +23,10 @@
         "title": "Spotify Search",
         "directory": "spotify_search",
         "description": "'Spotify Search' is an application which looks through the database of 'Spotify' to search for different artists and albums via a search field. As soon as the artists/albums are shown you can scroll down and select one to get to the spotify description. As soon as the user reaches the end of the page new results will be loaded, so that it seams like that the results are infinite."
+    },
+    {
+        "title": "Social Network",
+        "directory": "Social-Network",
+        "description": "'Spotify Search' is an application which looks through the database of 'Spotify' to search for different artists and albums via a search field. As soon as the artists/albums are shown you can scroll down and select one to get to the spotify description. As soon as the user reaches the end of the page new results will be loaded, so that it seams like that the results are infinite."
     }
 ]
