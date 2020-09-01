@@ -37,19 +37,4 @@ app.get("/projects/:project", (req, res) => {
     }
 });
 
-app.get("/projects/:project/src", (req, res) => {
-    const project = req.params.project;
-    const selectedProject = projects.find((item) => item.directory == project);
-
-    if (!selectedProject) {
-        return res.sendStatus(404);
-    } else {
-        res.render("descriptionPage", {
-            title: "Projects",
-            projects,
-            selectedProject,
-        });
-    }
-});
-
 app.listen(process.env.PORT || 8080, () => console.log("server listening!"));
