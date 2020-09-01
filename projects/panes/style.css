@@ -1,0 +1,34 @@
+body {
+    background-color: lightgrey;
+}
+
+img {
+    height: 500px;
+    width: 650px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+#container {
+    position: relative;
+    height: 500px;
+    width: 650px;
+    border: 5px solid midnightblue;
+}
+
+#top-img,
+#bottom-img {
+    position: absolute;
+}
+
+#slider {
+    position: absolute;
+    left: 250px;
+    width: 10px;
+    height: 100%;
+    background-color: midnightblue;
+}
+
+#top-img {
+    overflow: hidden;
+}

@@ -1,0 +1,19 @@
+<div class="description-container first">
+<div class="description-nav">
+    <h2 class="description-h2">My Projects</h2>
+    {{> description}}
+</div>
+</div>
+<div class="description-container">
+    <h1>{{selectedProject.title}}</h1>
+<div class="description-image">
+    <img src='/{{selectedProject.directory}}/screenshot.jpg'>
+</div>
+<div class="description-text">
+        <p>{{selectedProject.description}}</p>
+</div>
+<div class="button-container">
+    <a target="_blank"  href='/{{selectedProject.directory}}'><div class="button">Launch</div></a>
+</div>
+</div>
+

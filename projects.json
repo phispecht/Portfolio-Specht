@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Kitty Carousel",
+        "directory": "kitty_carousel",
+        "description": "In this project I developed a slider, with different images to be displayed. The slider runs automatically unless you use the dots, which is the navigation, at the bottom of it. The dots are only clickable after the animation stoped."
+    },
+    {
+        "title": "Connect Four",
+        "directory": "connect_four",
+        "description": "This game is called 'Connect Four', as most people already know. To win in this game you have to put in 4 coins of the same color in a row. This means that they can be either horizontal, diagonal or vertical. After winning a game the counter on the right side shows the result of how many games each player already won. "
+    },
+    {
+        "title": "Incremental Search",
+        "directory": "incremental_search",
+        "description": "In this application it is possible to search for different countries. If you for example put in the form field one chracter all countries beginning with this character will be displayed. The more characters you put in the less the span gets and the less countries will be shown. The displayed countries can be chosen by selecting them with the key arrows or just with the cursor of your mouse."
+    },
+    {
+        "title": "Panes",
+        "directory": "panes",
+        "description": "By using the 'Panes' application it is possible to animate two images in two different stadiums. As soon as the blue bar is moved the image is going to change depending on the way how much you moved the bar."
+    },
+    {
+        "title": "Spotify Search",
+        "directory": "spotify_search",
+        "description": "'Spotify Search' is an application which looks through the database of 'Spotify' to search for different artists and albums via a search field. As soon as the artists/albums are shown you can scroll down and select one to get to the spotify description. As soon as the user reaches the end of the page new results will be loaded, so that it seams like that the results are infinite."
+    }
+]

@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    background-color: blueviolet;
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    color: white;
+    text-transform: capitalize;
+}
+
+.highlight {
+    background-color: rgb(5, 108, 204);
+    color: white;
+}
+
+input {
+    width: 220px;
+    font-size: 18px;
+}
+
+.countries-container {
+    margin: 0 auto;
+    width: 220px;
+    background-color: rgb(188, 145, 228);
+}

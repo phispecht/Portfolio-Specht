@@ -1,0 +1,110 @@
+img {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 5px 5px 5px hsl(14, 91%, 8%), 10px 10px 5px hsl(14, 91%, 8%);
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: purple;
+}
+
+a:visited {
+    color: purple;
+}
+
+.a-hover:hover {
+    background-color: orangered;
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+h1 {
+    font-size: 34px;
+    color: orangered;
+}
+
+h2 {
+    color: black;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    width: 1170px;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+.pics {
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 33% 33% 33%;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.description-image img {
+    width: 500px;
+    height: auto;
+}
+
+.description-nav span {
+    text-align: left;
+}
+
+.description-nav {
+    position: absolute;
+    top: 0;
+}
+
+.button {
+    width: 180px;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    padding-top: 9px;
+    text-align: center;
+}
+
+.button:hover {
+    -webkit-box-shadow: 0px 12px 10px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 12px 10px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 12px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+.button-container {
+    margin: 0 auto;
+}
+
+.description-text p {
+    text-align: left;
+}
+
+.description-container {
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+}
+
+.description-container .pics {
+    display: block;
+}
+
+h2.description-h2 {
+    color: orangered;
+    font-size: 34px;
+}
