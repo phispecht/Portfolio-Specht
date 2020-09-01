@@ -6,6 +6,7 @@
     "scripts": {
         "build": "node build.js",
         "start": "node index.js",
+        "heroku-postbuild": "webpack -p",
         "test": "jest"
     },
     "engines": {
