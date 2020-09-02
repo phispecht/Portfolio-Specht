@@ -6,6 +6,7 @@
     "scripts": {
         "build": "node build.js",
         "start": "node index.js",
+        "postinstall": "npm run build",
         "test": "jest"
     },
     "engines": {
