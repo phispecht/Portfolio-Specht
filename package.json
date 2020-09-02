@@ -10,7 +10,12 @@
     },
     "devDependencies": {},
     "scripts": {
+        "build": "node build.js",
         "start": "node index.js"
+    },
+    "engines": {
+        "node": "10.19.0",
+        "npm": "6.14.4"
     },
     "author": "",
     "license": "ISC"
