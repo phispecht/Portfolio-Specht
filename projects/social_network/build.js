@@ -38,6 +38,6 @@ if (require.main == module) {
         watchOptions: {
             aggregateTimeout: 300,
         },
-        publicPath: "/",
+        publicPath: "https://portfolio-specht.herokuapp.com/",
     });
 }
