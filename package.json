@@ -10,7 +10,6 @@
     },
     "devDependencies": {},
     "scripts": {
-        "build": "node build.js",
         "start": "node index.js"
     },
     "engines": {
