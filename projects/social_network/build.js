@@ -4,7 +4,7 @@ const conf = {
     entry: ["@babel/polyfill", __dirname + "/src/start.js"],
     output: {
         path: __dirname,
-        filename: "bundle-server.js",
+        filename: "bundle.js",
     },
     performance: {
         hints: false,
