@@ -5,9 +5,8 @@
     "main": "index.js",
     "scripts": {
         "build": "node build.js",
-        "dev": "node index.js",
-        "test": "jest",
-        "heroku-postbuild": "webpack -p"
+        "start": "node index.js",
+        "test": "jest"
     },
     "engines": {
         "node": "10.15.1"
