@@ -2,26 +2,26 @@
     {
         "title": "Kitty Carousel",
         "directory": "kitty_carousel",
-        "description": "In this project I developed a slider, with different images to be displayed. The slider runs automatically unless the dots at the bottom of the slider are clicked, which serve to navigate through the images. The dots are only clickable after the animations stoped."
+        "description": "In this project I developed a slider, with different images to be displayed. The slider runs automatically unless the dots at the bottom of the slider are clicked, which serve to navigate through the images. The dots are only clickable after the animations stoped. Tech-Stack: Plain Javascript, HTML, CSS"
     },
     {
         "title": "Connect Four",
         "directory": "connect_four",
-        "description": "This game is called 'Connect Four', as most people already know. To win this game the user has to put in 4 coins of the same color in a row. This means that the coins can be either horizontal, diagonal or vertical. After winning a game the counter on the right side shows the result of how many games each player already won. "
+        "description": "This game is called 'Connect Four', as most people already know. To win this game the user has to put in 4 coins of the same color in a row. This means that the coins can be either horizontal, diagonal or vertical. After winning a game the counter on the right side shows the result of how many games each player already won. Tech-Stack: Plain Javascript, JQuery, HTML, CSS"
     },
     {
         "title": "Incremental Search",
         "directory": "incremental_search",
-        "description": "In this application it is possible to search for different countries. If the user puts in one character in the form field, for example, all countries beginning with this character will be displayed. The more characters you put in the less the span gets and the less countries will be shown. The displayed countries can be chosen by selecting them with the key arrows or just with the cursor of the mouse."
+        "description": "In this application it is possible to search for different countries. If the user puts in one character in the form field, for example, all countries beginning with this character will be displayed. The more characters you put in the less the span gets and the less countries will be shown. The displayed countries can be chosen by selecting them with the key arrows or just with the cursor of the mouse. Tech-Stack: Plain Javascript, Ajax, JQuery, HTML, CSS"
     },
     {
         "title": "Panes",
         "directory": "panes",
-        "description": "By using the 'Panes' application it is possible to animate two images in two different stadiums. As soon as the blue bar is moved with the cursor the image is going to change depending on the way how much the bar changed its position."
+        "description": "By using the 'Panes' application it is possible to animate two images in two different stadiums. As soon as the blue bar is moved with the cursor the image is going to change depending on the way how much the bar changed its position. Tech-Stack: Plain Javascript, HTML, CSS"
     },
     {
         "title": "Spotify Search",
         "directory": "spotify_search",
-        "description": "'Spotify Search' is an application to look through the database of 'Spotify' to search for different artists and albums depending on the value of the search field. As soon as the artists/albums are shown the user can scroll down and select one album/artist to get to the official spotify description. As soon as the user reaches the end of the page new results will be loaded automatically."
+        "description": "'Spotify Search' is an application to look through the database of 'Spotify' to search for different artists and albums depending on the value of the search field. As soon as the artists/albums are shown the user can scroll down and select one album/artist to get to the official spotify description. As soon as the user reaches the end of the page new results will be loaded automatically. Tech-Stack: Plain Javascript, Ajax, JQuery, HTML, CSS"
     }
 ]
