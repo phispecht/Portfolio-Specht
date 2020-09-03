@@ -13,15 +13,7 @@
         <p>{{selectedProject.description}}</p>
 </div>
 <div class="button-container">
-    {{#if selectedProject.directory "social_network"}}
-    <a target="_blank"  href='/https://socialnetwork-specht.herokuapp.com/'><div class="button">Launch</div></a>
-    {{else}}
-  {{#if selectedProject.directory "Imageboard"}}
-    <a target="_blank"  href='/https://imageboard-specht.herokuapp.com/'><div class="button">Launch</div></a>
-    {{else}}
     <a target="_blank"  href='/{{selectedProject.directory}}'><div class="button">Launch</div></a>
-    {{/if}}
-        {{/if}}
 </div>
 </div>
 
