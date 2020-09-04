@@ -13,22 +13,23 @@ p {
 
 a {
     text-decoration: none;
-    color: purple;
+    color: #004aad;
 }
 
 a:visited {
-    color: purple;
+    color: #004aad;
 }
 
 .a-hover:hover {
-    background-color: orangered;
+    background-color: #004aad;
     color: white;
     padding: 5px 10px 5px 10px;
 }
 
 h1 {
     font-size: 34px;
-    color: orangered;
+    color: #004aad;
+    text-decoration: underline;
 }
 
 h2 {
@@ -52,8 +53,8 @@ body {
 }
 
 footer {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 80px;
+    padding: 15px;
 }
 
 .description-image img {
@@ -73,7 +74,7 @@ footer {
 .button {
     width: 180px;
     height: 30px;
-    background-color: orangered;
+    background-color: #004aad;
     color: white;
     border-radius: 10px;
     padding-top: 9px;
@@ -105,6 +106,14 @@ footer {
 }
 
 h2.description-h2 {
-    color: orangered;
+    color: #004aad;
     font-size: 34px;
+}
+
+.pics img {
+    opacity: 0.8;
+}
+
+.pics img:hover {
+    opacity: 1;
 }

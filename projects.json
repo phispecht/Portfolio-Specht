@@ -2,12 +2,12 @@
     {
         "title": "Kitty Carousel",
         "directory": "kitty_carousel",
-        "description": "In this project I developed a slider, with different images to be displayed. The slider runs automatically unless the dots at the bottom of the slider are clicked, which serve to navigate through the images. The dots are only clickable after the animations stoped. Tech-Stack: Plain Javascript, HTML, CSS"
+        "description": "In this project I developed a slider to display different images. The slider runs automatically unless the dots at the bottom of the slider are clicked - these serve as a navigation. The dots are only clickable after the animations stoped. Tech-Stack: Plain Javascript, HTML, CSS"
     },
     {
         "title": "Connect Four",
         "directory": "connect_four",
-        "description": "This game is called 'Connect Four', as most people already know. To win this game the user has to put in 4 coins of the same color in a row. This means that the coins can be either horizontal, diagonal or vertical. After winning a game the counter on the right side shows the result of how many games each player already won. Tech-Stack: Plain Javascript, JQuery, HTML, CSS"
+        "description": "This game is called 'Connect Four'. To win this game the user has to put in 4 coins of the same color in a row. This means that the coins can be either horizontal, diagonal or vertical. After winning a game the counter on the right side shows the result of how many games each player already won. Tech-Stack: Plain Javascript, JQuery, HTML, CSS"
     },
     {
         "title": "Incremental Search",
