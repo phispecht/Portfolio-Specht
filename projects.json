@@ -12,7 +12,7 @@
     {
         "title": "Incremental Search",
         "directory": "incremental_search",
-        "description": "In this application it is possible to search for different countries. If the user puts in one character in the form field, for example, all countries beginning with this character will be displayed. The more characters you put in the less the span gets and the less countries will be shown. The displayed countries can be chosen by selecting them with the key arrows or just with the cursor of the mouse. Tech-Stack: Plain Javascript, Ajax, JQuery, HTML, CSS"
+        "description": "In this application it is possible to search for different countries. If the user puts in one character in the form field, for example, all countries beginning with this character will be displayed. The more characters the user puts in the less the span gets and the less countries will be shown. The displayed countries can be chosen by selecting them with the key arrows or just with the cursor of the mouse. Tech-Stack: Plain Javascript, Ajax, JQuery, HTML, CSS"
     },
     {
         "title": "Panes",

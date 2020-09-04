@@ -2,7 +2,7 @@
     var nextUrl;
     var remove = "false";
     var moreItems = [];
-    var baseUrl = "http://spicedify.herokuapp.com/spotify";
+    var baseUrl = "https://spicedify.herokuapp.com/spotify";
     var userInput;
     var albumOrArtist;
 
