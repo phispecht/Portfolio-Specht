@@ -1,9 +1,9 @@
 img {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 250px;
     height: 250px;
     object-fit: cover;
-    box-shadow: 5px 5px 5px hsl(14, 91%, 8%), 10px 10px 5px hsl(14, 91%, 8%);
+    box-shadow: 5px 5px 5px #7a7a7a, 4px 4px 3px #7a7a7a;
 }
 
 p {
@@ -22,6 +22,11 @@ a:visited {
 
 .a-hover:hover {
     background-color: #004aad;
+    background: linear-gradient(
+        90deg,
+        rgba(155, 10, 240, 1) 17%,
+        rgba(0, 74, 173, 1) 100%
+    );
     color: white;
     padding: 5px 10px 5px 10px;
 }
@@ -30,6 +35,10 @@ h1 {
     font-size: 34px;
     color: #004aad;
     text-decoration: underline;
+}
+
+.h1-header {
+    font-size: 40px;
 }
 
 h2 {
@@ -41,9 +50,34 @@ h2 {
 body {
     text-align: center;
     margin: 0 auto;
-    width: 1170px;
     font-family: "Roboto", sans-serif;
     background-color: white;
+}
+
+.header {
+    background-image: linear-gradient(
+        90deg,
+        rgba(155, 10, 240, 1) 17%,
+        rgba(0, 74, 173, 1) 100%
+    );
+    height: 400px;
+    margin-bottom: 70px;
+}
+
+.header p {
+    color: white;
+    max-width: 615px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    margin-top: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.header-content {
+    padding-top: 100px;
 }
 
 .pics {
@@ -53,8 +87,20 @@ body {
 }
 
 footer {
+    top: 100%;
     margin-top: 80px;
-    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(
+        rgba(155, 10, 240, 1),
+        rgba(0, 74, 173, 1)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .description-image img {
@@ -72,13 +118,21 @@ footer {
 }
 
 .button {
+    margin-top: 30px;
+    margin-bottom: 20px;
     width: 180px;
     height: 30px;
     background-color: #004aad;
+    background: linear-gradient(
+        90deg,
+        rgba(155, 10, 240, 1) 17%,
+        rgba(0, 74, 173, 1) 100%
+    );
     color: white;
     border-radius: 10px;
     padding-top: 9px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .button:hover {
@@ -88,6 +142,11 @@ footer {
 }
 
 .button-container {
+    margin: 0 auto;
+}
+
+.container-parent {
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -111,9 +170,51 @@ h2.description-h2 {
 }
 
 .pics img {
-    opacity: 0.8;
+    margin-bottom: 20px;
 }
 
-.pics img:hover {
-    opacity: 1;
+.pics span:hover {
+    background-color: #e1e1e1;
+}
+
+.pics span {
+    background-color: #f1f1f1;
+    margin: 20px;
+    box-shadow: 5px 5px 5px #7a7a7a, 4px 4px 3px #7a7a7a;
+}
+
+.pics h2 {
+    margin-top: 30px;
+}
+
+span .projectTitles {
+    background-color: white;
+    margin: 0;
+    margin-top: 10px;
+}
+
+span .projectTitles:hover {
+    background-color: white;
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+
+.text-bold {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.github {
+    margin-top: 10px;
+}
+
+.github img {
+    margin-top: 0;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: none;
+    vertical-align: middle;
 }
