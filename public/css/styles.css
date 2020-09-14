@@ -1,6 +1,6 @@
 img {
-    margin-top: 10px;
-    width: 250px;
+    border-radius: 8px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
     box-shadow: 5px 5px 5px #7a7a7a, 4px 4px 3px #7a7a7a;
@@ -16,17 +16,7 @@ a {
     color: #004aad;
 }
 
-a:visited {
-    color: #004aad;
-}
-
 .a-hover:hover {
-    background-color: #004aad;
-    background: linear-gradient(
-        90deg,
-        rgba(155, 10, 240, 1) 17%,
-        rgba(0, 74, 173, 1) 100%
-    );
     color: white;
     padding: 5px 10px 5px 10px;
 }
@@ -47,6 +37,10 @@ h2 {
     margin-bottom: 0px;
 }
 
+h3 {
+    font-size: 1.3em;
+}
+
 body {
     text-align: center;
     margin: 0 auto;
@@ -65,7 +59,8 @@ body {
 }
 
 .header p {
-    color: white;
+    font-size: 24px;
+    color: lightgrey;
     max-width: 615px;
     margin: 0 auto;
 }
@@ -82,8 +77,7 @@ body {
 
 .pics {
     display: grid;
-    grid-template-rows: 400px;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 footer {
@@ -104,7 +98,7 @@ footer {
 }
 
 .description-image img {
-    width: 500px;
+    width: 100%;
     height: auto;
 }
 
@@ -119,7 +113,7 @@ footer {
 
 .button {
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 180px;
     height: 30px;
     background-color: #004aad;
@@ -133,6 +127,12 @@ footer {
     padding-top: 9px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.button-welcome {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .button:hover {
@@ -156,7 +156,7 @@ footer {
 
 .description-container {
     display: inline-block;
-    width: 49%;
+    width: 550px;
     text-align: left;
 }
 
@@ -169,28 +169,40 @@ h2.description-h2 {
     font-size: 34px;
 }
 
-.pics img {
-    margin-bottom: 20px;
+.pics span:hover {
+    background: radial-gradient(
+        circle,
+        rgba(0, 74, 173, 1) 25%,
+        rgba(155, 10, 240, 1) 100%
+    );
 }
 
-.pics span:hover {
-    background-color: #e1e1e1;
+.pics span:hover .a-projectTitle {
+    color: white;
 }
 
 .pics span {
-    background-color: #f1f1f1;
     margin: 20px;
-    box-shadow: 5px 5px 5px #7a7a7a, 4px 4px 3px #7a7a7a;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
 }
 
 .pics h2 {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 span .projectTitles {
     background-color: white;
     margin: 0;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+}
+
+.a-projectTitleDescription:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(155, 10, 240, 1) 17%,
+        rgba(0, 74, 173, 1) 100%
+    );
 }
 
 span .projectTitles:hover {
@@ -198,7 +210,12 @@ span .projectTitles:hover {
 }
 
 .no-shadow {
+    filter: brightness(0.7);
     box-shadow: none;
+}
+
+.no-shadow:hover {
+    filter: none;
 }
 
 .text-bold {
@@ -217,4 +234,173 @@ span .projectTitles:hover {
     height: 50px;
     box-shadow: none;
     vertical-align: middle;
+}
+
+.fa-angle-double-right {
+    color: grey;
+}
+
+.complex {
+    margin-bottom: 60px;
+}
+
+.h2-complex {
+    margin-bottom: 50px;
+}
+
+hr {
+    border-radius: 10px;
+    width: 100px;
+    background: linear-gradient(
+        90deg,
+        rgba(155, 10, 240, 1) 17%,
+        rgba(0, 74, 173, 1) 100%
+    );
+    height: 10px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.complex a {
+    font-size: 20px;
+}
+
+.complex .fa-angle-double-right:last-of-type {
+    margin-left: 40px;
+}
+
+.complex-child {
+    display: inline-block;
+    width: 320px;
+    padding: 15px 15px 30px 15px;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.complex-child:last-of-type {
+    margin-left: 20px;
+}
+
+.logo-container {
+    padding: 10px;
+    position: fixed;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 999;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-family: "Merienda One", cursive;
+}
+
+.description-nav h2 {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1240px) {
+    .description-container {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .pics {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .description-container {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .description-container h1 {
+        margin-top: 40px;
+    }
+
+    .description-text p {
+        text-align: justify;
+    }
+
+    .description-button {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .description-nav {
+        position: relative;
+    }
+
+    .description-nav span {
+        box-shadow: none;
+    }
+
+    .description-nav .a-projectTitleDescription:hover {
+        background: none;
+    }
+
+    .description-nav .pics span:hover {
+        background: none;
+    }
+
+    .description-nav h2 {
+        display: inline-block;
+    }
+
+    .first {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pics {
+        display: block;
+    }
+
+    .pics span {
+        margin: 0;
+    }
+
+    .pics h2 {
+        margin-bottom: 50px;
+    }
+
+    .description-nav .pics h2 {
+        margin-bottom: 0;
+    }
+
+    .projectTitles img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 723px) {
+    .complex-child:last-of-type {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .description-container {
+        width: 90%;
+    }
+    .header p {
+        padding: 0px 15px 0px 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .projectTitles img {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .complex-child {
+        width: 280px;
+    }
 }

@@ -2,7 +2,7 @@
 <div class="description-container first">
 <div class="description-nav">
     <h2 class="description-h2">My Projects</h2>
-    {{> description}}
+    {{> descriptionOther}}
 </div>
 </div>
 <div class="description-container">
@@ -13,7 +13,7 @@
 <div class="description-text">
         <p>{{selectedProject.description}}</p>
         <div class="button-container">
-            <a target="_blank"  href='/{{selectedProject.directory}}'><div class="button">Launch</div></a>
+            <a target="_blank"  href='/{{selectedProject.directory}}'><div class="button description-button">Launch</div></a>
         </div>
         <span class="text-bold">Tech Stack: </span><span class="gradient-text">{{selectedProject.stack}}</span>
         <div class="github"><a target="_blank" href={{selectedProject.github}}><img src="/GitHub-Mark-64px.png"/><span class="text-bold gradient-text"> Go to project </span></a></div>

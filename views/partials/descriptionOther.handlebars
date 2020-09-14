@@ -1,0 +1,8 @@
+    <div class="pics">
+    {{#projects}}
+    <span class="projectTitles"><h2><i class="fas fa-angle-double-right"></i> &nbsp;<a class="a-hover a-projectTitleDescription" href='/projects/{{directory}}'>{{title}}</a></h2>
+        {{#if ../img}}
+        <a class="welcome-image-link" href='/projects/{{directory}}'><img class="no-shadow" src='/{{directory}}/screenshot.jpg'></a></span>
+        {{/if}}
+    {{/projects}}
+    </div>

@@ -1,8 +1,10 @@
     <div class="pics">
     {{#projects}}
-    <span class="projectTitles"><h2><a class="a-hover a-projectTitle" href='/projects/{{directory}}'>{{title}}</a></h2>
+    <span class="projectTitles">
         {{#if ../img}}
-        <a href='/projects/{{directory}}'><img class="no-shadow" src='/{{directory}}/screenshot.jpg'></a></span>
+        <a href='/projects/{{directory}}'><img class="no-shadow" src='/{{directory}}/screenshot.jpg'></a>
         {{/if}}
+        <h2><a class="a-projectTitle" href='/projects/{{directory}}'>{{title}}</a></h2>
+    </span>    
     {{/projects}}
     </div>
