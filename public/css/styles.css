@@ -372,7 +372,7 @@ hr {
 
     .description-nav {
         position: absolute;
-        left: -370px;
+        left: -375px;
         border-radius: 8px;
         box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
         padding: 20px;
@@ -394,7 +394,7 @@ hr {
         width: 130px;
         padding: 20px;
         position: absolute;
-        right: -130px;
+        right: -138px;
         transform: rotate(-90deg);
         top: 54px;
         background: linear-gradient(
