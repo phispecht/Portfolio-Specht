@@ -86,6 +86,18 @@ footer {
     margin-bottom: 20px;
 }
 
+.mail {
+    background: -webkit-linear-gradient(
+        rgba(155, 10, 240, 1),
+        rgba(0, 74, 173, 1)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
 .gradient-text {
     background: -webkit-linear-gradient(
         rgba(155, 10, 240, 1),
@@ -210,7 +222,7 @@ span .projectTitles:hover {
 }
 
 .no-shadow {
-    filter: brightness(0.7);
+    filter: brightness(0.8);
     box-shadow: none;
 }
 
@@ -306,6 +318,10 @@ hr {
 .welcome-content img {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+
+.fa-envelope {
+    vertical-align: bottom;
 }
 
 @media screen and (max-width: 1240px) {
