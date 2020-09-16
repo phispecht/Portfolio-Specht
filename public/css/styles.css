@@ -320,24 +320,6 @@ hr {
         font-size: 18px;
     }
 
-    .complex-child {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .button-welcome {
-        font-size: 1.6em;
-        padding: 22px;
-    }
-
-    .complex-child:last-of-type {
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 60px;
-    }
-
     .description-container h1 {
         margin-top: 40px;
         text-align: center;
@@ -439,9 +421,22 @@ hr {
 }
 
 @media screen and (max-width: 723px) {
+    .button-welcome {
+        font-size: 1.6em;
+        padding: 22px;
+    }
+
+    .complex-child {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+
     .complex-child:last-of-type {
-        margin-left: 0px;
-        margin-top: 30px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 60px;
     }
 }
 
