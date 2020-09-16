@@ -396,9 +396,21 @@ hr {
     .first {
         width: 49%;
     }
+
+    #nav a:hover {
+        background: linear-gradient(
+            90deg,
+            rgba(155, 10, 240, 1) 17%,
+            rgba(0, 74, 173, 1) 100%
+        );
+    }
 }
 
 @media screen and (max-width: 800px) {
+    .welcome-content span:hover .a-projectTitle {
+        color: rgba(0, 74, 173, 1);
+    }
+
     .pics {
         display: block;
     }
@@ -408,6 +420,7 @@ hr {
     }
 
     .pics h2 {
+        margin: 0 auto;
         margin-bottom: 50px;
     }
 
@@ -416,6 +429,10 @@ hr {
     }
 
     .projectTitles img {
+        width: 350px;
+    }
+
+    .projectTitles h2 {
         width: 350px;
     }
 }
@@ -450,13 +467,27 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
+    .header i.fa-angle-double-right {
+        display: none;
+    }
+
+    .h2-complex {
+        padding: 0 10px 0 10px;
+    }
+
     .projectTitles img {
         width: 280px;
     }
-}
 
-@media screen and (max-width: 320px) {
-    .complex-child {
-        width: 280px;
+    .header p {
+        font-size: 22px;
+    }
+
+    .header-content {
+        padding-top: 70px;
+    }
+
+    .h1-header {
+        font-size: 2.8em;
     }
 }
