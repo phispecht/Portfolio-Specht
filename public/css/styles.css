@@ -11,6 +11,11 @@ p {
     font-weight: 300;
 }
 
+ul li {
+    font-size: 20px;
+    font-weight: 300;
+}
+
 a {
     text-decoration: none;
     color: #004aad;
@@ -42,6 +47,8 @@ h3 {
 }
 
 body {
+    position: relative;
+    overflow: auto;
     text-align: center;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
@@ -80,10 +87,14 @@ body {
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-footer {
-    top: 100%;
-    margin-top: 80px;
-    margin-bottom: 20px;
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+    padding: 25px 0px 25px 0px;
+    background: rgb(239 239 239);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .mail {
@@ -299,6 +310,7 @@ hr {
     width: 50px;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 999;
+    top: 0;
 }
 
 .logo {
@@ -324,6 +336,76 @@ hr {
     vertical-align: bottom;
 }
 
+.table {
+    margin-bottom: 20px;
+}
+
+.table td {
+    background: rgb(239 239 239);
+    font-size: 20px;
+    width: 50%;
+    padding: 10px 5px;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.footer-right span:not(:first-of-type) {
+    margin-left: 30px;
+}
+
+.footer-left span:not(:first-of-type) {
+    margin-left: 30px;
+}
+
+.footer-right {
+    text-align: right;
+    width: 47%;
+    padding: 0px 20px 0px 20px;
+}
+
+.footer-left {
+    text-align: left;
+    width: 47%;
+    padding: 0px 20px 0px 20px;
+    font-size: 18px;
+}
+
+.footer-left span,
+.footer-left a {
+    font-size: 18px;
+}
+
+.footer-child {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.impressum,
+.datenschutz,
+.disclaimer {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: left;
+    padding: 30px;
+}
+
+.impressum h1,
+.datenschutz h1,
+.disclaimer h1 {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+    .footer-right {
+        width: 40%;
+    }
+
+    .footer-left {
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 1240px) {
     .description-container {
         width: 400px;
@@ -336,9 +418,24 @@ hr {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .footer-left span:not(:first-of-type) {
+        margin-left: 0px;
+    }
+
+    .mail {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 980px) {
     .description-nav {
         font-size: 18px;
+    }
+
+    .description-nav h2 {
+        margin-top: 30px;
+        font-size: 1.2em;
     }
 
     .description-container h1 {
@@ -353,8 +450,9 @@ hr {
     .description-button {
         margin: 0 auto;
         margin-bottom: 30px;
-        font-size: 1.6em;
-        padding: 22px;
+        font-size: 1.2em;
+        padding: 5px;
+        padding-top: 13px;
     }
 
     .description-nav {
@@ -375,7 +473,7 @@ hr {
 
     .description-nav {
         position: absolute;
-        left: -380px;
+        left: -270px;
         border-radius: 8px;
         box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
         padding: 20px;
@@ -394,12 +492,14 @@ hr {
         display: block;
         background-color: grey;
         text-align: center;
-        width: 130px;
+        width: 190px;
         padding: 20px;
+        padding-right: 10px;
+        height: 32px;
         position: absolute;
-        right: -134px;
+        right: -145px;
         transform: rotate(-90deg);
-        top: 54px;
+        top: 100px;
         background: linear-gradient(
             90deg,
             rgba(155, 10, 240, 1) 17%,
@@ -407,7 +507,7 @@ hr {
         );
         border-radius: 5px;
         color: white;
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .description-container:last-of-type {
@@ -425,11 +525,30 @@ hr {
             rgba(0, 74, 173, 1) 100%
         );
     }
+
+    .complex-child {
+        display: block;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .complex-child:last-of-type {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .welcome-content span:hover .a-projectTitle {
         color: rgba(0, 74, 173, 1);
+    }
+
+    .description-menu {
+        width: 200px;
+        padding: 10px;
+        right: -122px;
+        top: 115px;
+        font-size: 1.2em;
     }
 
     .pics {
@@ -445,8 +564,21 @@ hr {
         margin-bottom: 50px;
     }
 
+    .description-nav {
+        left: -378px;
+    }
+
+    .show {
+        left: 0;
+    }
+
     .description-nav .pics h2 {
         margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .description-nav .pics h2 {
+        margin-top: 25px;
     }
 
     .projectTitles img {
@@ -456,12 +588,16 @@ hr {
     .projectTitles h2 {
         width: 350px;
     }
+
+    .footer-right span {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 723px) {
     .button-welcome {
-        font-size: 1.6em;
-        padding: 22px;
+        font-size: 1.4em;
+        padding: 10px;
     }
 
     .complex-child {
@@ -476,20 +612,66 @@ hr {
         margin: 0 auto;
         margin-top: 60px;
     }
+
+    .footer-left,
+    .footer-right {
+        width: 43%;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .description-container {
         width: 90%;
     }
+
+    .table td {
+        display: block;
+        width: 100%;
+        word-break: break-word;
+    }
+
     .header p {
         padding: 0px 15px 0px 15px;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-right span:not(:first-of-type) {
+        margin-left: 0px;
+    }
+
+    .mail {
+        margin-top: 0;
+    }
+
+    .footer-right {
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .header i.fa-angle-double-right {
         display: none;
+    }
+
+    .impressum h1,
+    .datenschutz h1,
+    .disclaimer h1 {
+        font-size: 28px;
+    }
+
+    .description-nav {
+        width: 240px;
+        left: -270px;
+    }
+
+    .show {
+        left: 0;
     }
 
     .h2-complex {
@@ -510,5 +692,9 @@ hr {
 
     .h1-header {
         font-size: 2.8em;
+    }
+
+    .welcome-content .projectTitles h2 {
+        width: 320px;
     }
 }

@@ -37,4 +37,22 @@ app.get("/projects/:project", (req, res) => {
     }
 });
 
+app.get("/impressum", (req, res) => {
+    res.render("impressum", {
+        title: "impressum",
+    });
+});
+
+app.get("/datenschutz", (req, res) => {
+    res.render("datenschutz", {
+        title: "datenschutz",
+    });
+});
+
+app.get("/disclaimer", (req, res) => {
+    res.render("disclaimer", {
+        title: "disclaimer",
+    });
+});
+
 app.listen(process.env.PORT || 8080, () => console.log("server listening!"));
