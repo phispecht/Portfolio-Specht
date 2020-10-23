@@ -116,7 +116,7 @@ body {
         rgba(0, 74, 173, 1)
     );
     -webkit-background-clip: text;
-    /*     -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
     font-size: 20px;
     font-weight: 800;
 }
@@ -617,6 +617,14 @@ hr {
     .footer-left,
     .footer-right {
         width: 43%;
+    }
+
+    .gradient-text {
+        background: none;
+        -webkit-background-clip: none;
+        -webkit-text-fill-color: none;
+        font-size: 20px;
+        font-weight: 800;
     }
 }
 
