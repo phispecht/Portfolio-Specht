@@ -395,6 +395,7 @@ hr {
 .datenschutz h1,
 .disclaimer h1 {
     margin-bottom: 40px;
+    word-break: break-all;
 }
 
 @media screen and (max-width: 1400px) {
@@ -726,5 +727,11 @@ hr {
 
     .welcome-content .projectTitles h2 {
         width: 320px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header h1 {
+        font-size: 36px;
     }
 }
