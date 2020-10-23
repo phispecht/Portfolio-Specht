@@ -668,6 +668,19 @@ hr {
         display: none;
     }
 
+    .footer-left span,
+    .footer-left a {
+        font-size: 14px;
+    }
+
+    .footer-right span {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 15px 0px 15px 0px;
+    }
+
     .impressum h1,
     .datenschutz h1,
     .disclaimer h1 {
