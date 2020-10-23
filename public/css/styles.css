@@ -6,6 +6,31 @@ img {
     box-shadow: 5px 5px 5px #7a7a7a, 4px 4px 3px #7a7a7a;
 }
 
+.portrait-container {
+    position: relative;
+}
+
+.portraint-container span {
+    display: inline-block;
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 25px;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.dot {
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #21ed81;
+}
+
 p {
     font-size: 20px;
     font-weight: 300;
@@ -172,6 +197,11 @@ body {
 .container-parent {
     max-width: 1170px;
     margin: 0 auto;
+    margin-top: 20px;
+}
+
+.welcome-container {
+    margin-top: 170px;
 }
 
 .description-text p {
@@ -260,8 +290,13 @@ span .projectTitles:hover {
     vertical-align: middle;
 }
 
-.fa-angle-double-right {
+.fa-angle-double-right,
+.fa-angle-double-down {
     color: #21ed81;
+}
+
+.fa-angle-double-down {
+    font-size: 3.4em;
 }
 
 .complex {
@@ -602,6 +637,10 @@ hr {
         padding: 10px;
     }
 
+    .h1-header {
+        font-size: 3em;
+    }
+
     .complex-child {
         display: block;
         text-align: center;
@@ -669,6 +708,12 @@ hr {
 
     .footer-right {
         margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header p {
+        font-size: 1.4em;
     }
 }
 
