@@ -51,7 +51,7 @@ body {
     overflow: auto;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 180px;
     font-family: "Roboto", sans-serif;
     background-color: white;
 }
@@ -546,8 +546,8 @@ hr {
 
     .description-menu {
         width: 200px;
-        padding: 10px;
-        right: -122px;
+        padding: 5px;
+        right: -114px;
         top: 115px;
         font-size: 1.2em;
     }
@@ -625,6 +625,10 @@ hr {
         width: 90%;
     }
 
+    .welcome-content .pics {
+        display: block;
+    }
+
     .table td {
         display: block;
         width: 100%;
@@ -643,7 +647,11 @@ hr {
     }
 
     .footer-right span:not(:first-of-type) {
-        margin-left: 0px;
+        margin-left: 15px;
+    }
+
+    .footer-right span {
+        display: inline-block;
     }
 
     .mail {
