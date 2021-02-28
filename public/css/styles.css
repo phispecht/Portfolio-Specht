@@ -71,6 +71,11 @@ h3 {
     font-size: 1.3em;
 }
 
+h4 {
+    font-size: 1.1rem;
+    color: rgb(68, 68, 68);
+}
+
 body {
     position: relative;
     overflow: auto;
@@ -110,7 +115,7 @@ body {
 
 .pics {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .footer {
@@ -238,17 +243,17 @@ h2.description-h2 {
 .pics span {
     margin: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .pics h2 {
+    padding-bottom: 20px;
     margin-top: 15px;
 }
 
 span .projectTitles {
     background-color: white;
     margin: 0;
-    /* margin-top: 10px; */
 }
 
 .a-projectTitleDescription:hover {
@@ -304,6 +309,7 @@ span .projectTitles:hover {
 }
 
 .h2-complex {
+    font-size: 1.8rem;
     margin-bottom: 50px;
 }
 
@@ -329,15 +335,17 @@ hr {
 }
 
 .complex-child {
+    vertical-align: top;
     display: inline-block;
+    margin: 10px;
     width: 320px;
     padding: 15px 15px 30px 15px;
-    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
     border-radius: 8px;
 }
 
-.complex-child:last-of-type {
-    margin-left: 20px;
+.complex-child:hover {
+    background: rgb(243, 243, 243);
 }
 
 .logo-container {
@@ -569,9 +577,9 @@ hr {
         margin: 0 auto;
     }
 
-    .complex-child:last-of-type {
+    .complex-child:not(:first-of-type) {
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 }
 
@@ -624,6 +632,7 @@ hr {
 
     .projectTitles h2 {
         width: 350px;
+        padding-top: 5px;
     }
 
     .footer-right span {
@@ -651,7 +660,7 @@ hr {
     .complex-child:last-of-type {
         text-align: center;
         margin: 0 auto;
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     .footer-left,
