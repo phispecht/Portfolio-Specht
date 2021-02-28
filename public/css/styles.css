@@ -68,11 +68,11 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: rgb(68, 68, 68);
 }
 
@@ -81,7 +81,6 @@ body {
     overflow: auto;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 180px;
     font-family: "Roboto", sans-serif;
     background-color: white;
 }
@@ -119,25 +118,27 @@ body {
 }
 
 .footer {
-    position: fixed;
+    color: rgb(15, 15, 15);
     bottom: 0;
     width: 100%;
     margin-top: 100px;
     padding: 25px 0px 25px 0px;
-    background: rgb(239 239 239);
-    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+    background: rgb(204, 227, 218);
 }
 
-.mail {
-    background: -webkit-linear-gradient(
-        rgba(155, 10, 240, 1),
-        rgba(0, 74, 173, 1)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 20px;
-    font-weight: 800;
-    margin-top: 10px;
+.footer .mail {
+    font-size: 18px;
+}
+
+.footer-bottom span:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.seperator {
+    height: 1px;
+    width: 50px;
+    margin: 15px auto;
+    background: rgb(15, 15, 15);
 }
 
 .gradient-text {
@@ -185,7 +186,7 @@ body {
 
 .button-welcome {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 30px;
 }
 
@@ -226,6 +227,10 @@ body {
 h2.description-h2 {
     color: #004aad;
     font-size: 34px;
+}
+
+.description-button {
+    font-size: 1.2em;
 }
 
 .pics span:hover {
@@ -282,6 +287,10 @@ span .projectTitles:hover {
     font-weight: 800;
 }
 
+.tech-stack-home {
+    height: 100px;
+}
+
 .github {
     margin-top: 10px;
 }
@@ -305,6 +314,7 @@ span .projectTitles:hover {
 }
 
 .complex {
+    display: flex;
     margin-bottom: 60px;
 }
 
@@ -335,8 +345,9 @@ hr {
 }
 
 .complex-child {
-    vertical-align: top;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
     margin: 10px;
     width: 320px;
     padding: 15px 15px 30px 15px;
@@ -344,8 +355,32 @@ hr {
     border-radius: 8px;
 }
 
+.complex-child h3 {
+    height: 30px;
+}
+
 .complex-child:hover {
-    background: rgb(243, 243, 243);
+    background: rgb(248, 248, 248);
+}
+
+.complex-child-bottom {
+    margin-top: auto;
+}
+
+.fa-hamburger {
+    color: #51b73b;
+}
+
+.fa-film {
+    color: orange;
+}
+
+.fa-image {
+    color: rgb(48 48 255);
+}
+
+.fa-users {
+    color: #7804d1;
 }
 
 .logo-container {
@@ -393,35 +428,10 @@ hr {
     word-break: normal;
 }
 
-.footer-right span:not(:first-of-type) {
-    margin-left: 30px;
-}
-
-.footer-left span:not(:first-of-type) {
-    margin-left: 30px;
-}
-
-.footer-right {
-    text-align: right;
-    width: 47%;
-    padding: 0px 20px 0px 20px;
-}
-
-.footer-left {
-    text-align: left;
-    width: 47%;
-    padding: 0px 20px 0px 20px;
+.footer a {
+    color: rgb(15, 15, 15);
+    font-weight: 400;
     font-size: 18px;
-}
-
-.footer-left span,
-.footer-left a {
-    font-size: 18px;
-}
-
-.footer-child {
-    vertical-align: middle;
-    display: inline-block;
 }
 
 .impressum,
@@ -441,16 +451,6 @@ hr {
     word-break: break-all;
 }
 
-@media screen and (max-width: 1400px) {
-    .footer-right {
-        width: 40%;
-    }
-
-    .footer-left {
-        width: 40%;
-    }
-}
-
 @media screen and (max-width: 1240px) {
     .description-container {
         width: 400px;
@@ -463,13 +463,9 @@ hr {
     }
 }
 
-@media screen and (max-width: 1100px) {
-    .footer-left span:not(:first-of-type) {
-        margin-left: 0px;
-    }
-
-    .mail {
-        display: block;
+@media screen and (max-width: 1110px) {
+    .tech-stack-home {
+        height: 120px;
     }
 }
 
@@ -571,13 +567,25 @@ hr {
         );
     }
 
-    .complex-child {
-        display: block;
-        width: 500px;
-        margin: 0 auto;
+    .tech-stack-home {
+        height: auto;
     }
 
-    .complex-child:not(:first-of-type) {
+    .complex-child h3 {
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .complex-child h4 {
+        margin-bottom: 0;
+    }
+
+    .complex {
+        display: block;
+    }
+
+    .complex-child {
+        width: 70%;
         margin: 0 auto;
         margin-top: 30px;
     }
@@ -627,7 +635,7 @@ hr {
     }
 
     .projectTitles img {
-        width: 350px;
+        width: 70%;
     }
 
     .projectTitles h2 {
@@ -635,37 +643,19 @@ hr {
         padding-top: 5px;
     }
 
-    .footer-right span {
-        display: block;
+    .pics span {
+        box-shadow: none;
+    }
+
+    .welcome-content img {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 }
 
 @media screen and (max-width: 723px) {
-    .button-welcome {
-        font-size: 1.4em;
-        padding: 10px;
-    }
-
     .h1-header {
         font-size: 3em;
-    }
-
-    .complex-child {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        width: 80%;
-    }
-
-    .complex-child:last-of-type {
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 30px;
-    }
-
-    .footer-left,
-    .footer-right {
-        width: 43%;
     }
 
     .gradient-text {
@@ -695,53 +685,22 @@ hr {
     .header p {
         padding: 0px 15px 0px 15px;
     }
-
-    .footer-left,
-    .footer-right {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-    }
-
-    .footer-right span:not(:first-of-type) {
-        margin-left: 15px;
-    }
-
-    .footer-right span {
-        display: inline-block;
-    }
-
-    .mail {
-        margin-top: 0;
-    }
-
-    .footer-right {
-        margin-top: 10px;
-    }
 }
 
 @media screen and (max-width: 580px) {
     .header p {
         font-size: 1.4em;
     }
+
+    .complex-child,
+    .projectTitles img {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .header i.fa-angle-double-right {
         display: none;
-    }
-
-    .footer-left span,
-    .footer-left a {
-        font-size: 14px;
-    }
-
-    .footer-right span {
-        font-size: 14px;
-    }
-
-    .footer {
-        padding: 15px 0px 15px 0px;
     }
 
     .impressum h1,
@@ -761,10 +720,6 @@ hr {
 
     .h2-complex {
         padding: 0 10px 0 10px;
-    }
-
-    .projectTitles img {
-        width: 280px;
     }
 
     .header p {
